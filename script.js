@@ -1,7 +1,7 @@
 var rIndex,
                 table = document.getElementById("table");
             
-            // verificacao de campo vazio
+
             function checkEmptyInput()
             {
                 var isEmpty = false,
@@ -34,13 +34,10 @@ var rIndex,
                 return isEmpty;
             }
             
-            // adicionar linha
+
             function addHtmlTableRow()
             {
-                // get the table by id
-                // create a new row and cells
-                // get value from input text
-                // set the values into row cell's
+
                 if(!checkEmptyInput()){
                 var newRow = table.insertRow(table.length),
                     cell1 = newRow.insertCell(0),
@@ -59,12 +56,12 @@ var rIndex,
                 cell3.innerHTML = autor;
                 cell4.innerHTML = preco;
                 cell5.innerHTML = quant;
-                // call the function to set the event to the new row
+
                 selectedRowToInput();
             }
             }
             
-            // display selected row data into input text
+
             function selectedRowToInput()
             {
                 
@@ -72,7 +69,7 @@ var rIndex,
                 {
                     table.rows[i].onclick = function()
                     {
-                      // get the seected row index
+
                       rIndex = this.rowIndex;
                       document.getElementById("num").value = this.cells[0].innerHTML;
                       document.getElementById("titulo").value = this.cells[1].innerHTML;
@@ -105,7 +102,7 @@ var rIndex,
             function removeSelectedRow()
             {
                 table.deleteRow(rIndex);
-                // clear input text
+
                 document.getElementById("num").value = "";
                 document.getElementById("titulo").value = "";
                 document.getElementById("autor").value = "";
