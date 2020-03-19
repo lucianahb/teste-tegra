@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title>Livraria</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+			<link rel="stylesheet" href="style.css">
+		</head>
+		
+		<body>
+
+			<section class="section">
+				<div class="hero-body">
+					<div class="container">
+						<h1 class="title is-3 has-text-centered">Livraria da Luciana</h1>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<table id="table" class="table is-bordered is-hoverable">
+						<thead>
+							<tr>
+								<th>Número Registro</th>
+								<th>Título</th>
+								<th>Autor</th>
+								<th>Preço</th>
+								<th>Quantidade</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>01</td>
+								<td>O Programador Pragmático: De Aprendiz a Mestre</td>
+								<td>Andrew Hunt, David tdomas</td>
+								<td>125.50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>tde Mytdical Man-Montd: Essays on Software Engineering</td>
+								<td>Frederick P. Brooks Jr.</td>
+								<td>170.19</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>03</td>
+								<td>Expressões Regulares - Uma Abordagem Divertida</td>
+								<td>Aurelio Marinho Jargas</td>
+								<td>47.20</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>04</td>
+								<td>Domain-Driven Design: Tackling Complexity in tde Heart of Software</td>
+								<td>Eric Evans</td>
+								<td>252.14</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>04</td>
+								<td>Padrões de Arquitetura de Aplicações Corporativas</td>
+								<td>Martin Fowler</td>
+								<td>101.59</td>
+								<td>25</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>		
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="field">
+					  <label class="label" for="num">ID</label>
+					  <div class="control">
+					    <input class="input" type="number" name="num" id="num">
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label" for="titulo">Título</label>
+					  <div class="control">
+					    <input class="input" type="text" name="titulo" id="titulo">
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label" for="autor">Autor</label>
+					  <div class="control">
+					    <input class="input" type="text" name="autor" id="autor">
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label" for="preco">Preço</label>
+					  <div class="control">
+					    <input class="input" type="number" name="preco" id="preco">
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label" for="quant">Quantidade</label>
+					  <div class="control">
+					    <input class="input" type="number" name="quant" id="quant">
+					  </div>
+					</div>
+		      
+		      <div class="buttons">
+			      <button class="button is-primary" onclick="addHtmlTableRow();">Adicionar</button>
+			      <button class="button is-warning" onclick="editHtmlTbleSelectedRow();">Editar</button>
+			      <button class="button is-danger" onclick="removeSelectedRow();">Remover</button>
+					</div>
+				</div>
+			</section>
+			
+
+			<script type="text/javascript" src="./script.js"></script>
+		</body>
+	</html>
