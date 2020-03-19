@@ -3,3 +3,35 @@ tbody tr:hover td {
 	cursor: pointer;
 }
             
+.btnadd {
+	border: 1px solid #7fcdd0;
+	padding: 3px 12px;
+	margin-right: 12px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.btnedit {
+	border: 1px solid #d28b4b;
+	padding: 3px 12px;
+	margin-right: 12px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.btnremove {
+	border: 1px solid #c50000;
+	padding: 3px 12px;
+	margin-right: 12px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
